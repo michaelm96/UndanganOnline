@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brides",
+  "info": {
+    "singularName": "bride",
+    "pluralName": "brides",
+    "displayName": "Bride"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "father": {
+      "type": "string"
+    },
+    "mother": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

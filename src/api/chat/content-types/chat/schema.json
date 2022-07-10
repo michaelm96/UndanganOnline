@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "singularName": "chat",
+    "pluralName": "chats",
+    "displayName": "Chat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "chats"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "datang": {
+      "type": "boolean"
+    },
+    "ucapan": {
+      "type": "richtext"
+    }
+  }
+}

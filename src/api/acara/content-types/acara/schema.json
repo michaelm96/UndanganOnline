@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acaras",
+  "info": {
+    "singularName": "acara",
+    "pluralName": "acaras",
+    "displayName": "Acara",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bride_and_groom": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bride-and-groom.bride-and-groom"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "string"
+    },
+    "lokasi": {
+      "type": "string"
+    },
+    "waktu_mulai": {
+      "type": "string"
+    },
+    "waktu_selesai": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "nama_acara": {
+      "type": "string"
+    },
+    "tema": {
+      "type": "integer"
+    },
+    "hero": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hero.hero"
+    },
+    "regard": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::regard.regard"
+    },
+    "time_and_place": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::time-and-place.time-and-place"
+    },
+    "countdown": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::countdown.countdown"
+    },
+    "comment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comment.comment"
+    },
+    "gallery": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery.gallery"
+    },
+    "footer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer.footer"
+    },
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "acaras"
+    },
+    "order": {
+      "type": "json"
+    },
+    "tanggal": {
+      "type": "date"
+    }
+  }
+}

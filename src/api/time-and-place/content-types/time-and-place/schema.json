@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_and_places",
+  "info": {
+    "singularName": "time-and-place",
+    "pluralName": "time-and-places",
+    "displayName": "Time_and_Place"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "warna_bg": {
+      "type": "string"
+    },
+    "warna_font": {
+      "type": "string"
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ukuran": {
+      "type": "integer"
+    }
+  }
+}

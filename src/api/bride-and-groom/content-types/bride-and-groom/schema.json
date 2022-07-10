@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bride_and_grooms",
+  "info": {
+    "singularName": "bride-and-groom",
+    "pluralName": "bride-and-grooms",
+    "displayName": "Bride_and_Groom",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bride_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bride.bride"
+    },
+    "groom_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groom.groom"
+    },
+    "text": {
+      "type": "text"
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "warna_bg": {
+      "type": "string"
+    },
+    "ukuran": {
+      "type": "integer"
+    },
+    "warna_font": {
+      "type": "string"
+    }
+  }
+}
