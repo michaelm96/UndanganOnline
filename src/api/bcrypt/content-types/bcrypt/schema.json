@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "bcrypts",
+  "info": {
+    "singularName": "bcrypt",
+    "pluralName": "bcrypts",
+    "displayName": "bcrypt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "salt": {
+      "type": "integer"
+    }
+  }
+}

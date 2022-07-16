@@ -29,6 +29,9 @@
       "relation": "oneToMany",
       "target": "api::acara.acara",
       "mappedBy": "project"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
