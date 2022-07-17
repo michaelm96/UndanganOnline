@@ -32,6 +32,9 @@
     },
     "title": {
       "type": "string"
+    },
+    "harga": {
+      "type": "decimal"
     }
   }
 }
